@@ -6,8 +6,16 @@
     
 }
 .main-container{
-    position: relative;
+    
     font-family: "Work Sans", sans-serif;
+    
+}
+.main-card{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 80px;
 }
 .background-top img{
     width: 100%;
@@ -16,10 +24,10 @@
     position: absolute;
     background-color: white;
     width: 550px;
-    display: inline-block;
-    left: 35%;
-    top: 55%;
+    display: inline-flex;
+    flex-direction: column;
     border-radius: 15px;
+
     
 }
 .header{
@@ -44,6 +52,9 @@
     display: flex;
     background-color: white;
 }
+.questions-container{
+   border-radius: 15px;
+}
 .questions-container,.one-question img ,h2,p{
     background-color: white;
 }
@@ -51,6 +62,7 @@
     font-size: 11px;
     margin: 5%;
     position: relative;
+    
 }
 .title h2{
     margin-bottom: 20px;
@@ -69,8 +81,6 @@
     font-weight: 400;
     margin-bottom: 10px;
     background-color: white;
-    
-   
 }
 hr{
     margin-top: 25px;
@@ -78,4 +88,43 @@ hr{
 
 .ocultar,.minus-button{
     display: none;
+}
+h2{
+    cursor: pointer;
+}
+h2:hover{
+    color: hsl(293, 44%, 56%);
+}
+
+
+@media screen and (max-width: 770px) {
+   
+    .main-card{
+        margin-top: 200px;
+        position: static;
+    }
+    .card-container{
+        display: flex;
+        height: 70vh;
+        width: 40vh;
+    }
+    .title{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-between;
+    }
+    .title img{
+        position: static;
+        width: 30px;
+        height: 58px;
+        
+    }
+    .title h2{
+        margin-bottom: 5px;
+    }
+    .background-top img{
+        width: 100vh;
+    }
+    
 }
